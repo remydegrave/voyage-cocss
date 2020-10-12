@@ -11,21 +11,25 @@ header{
     /* Dimension du titre */
     font-size: 20px;
 }
-li{
+ul{
     display: flex;
-    list-style: none;
-    padding: 0; margin: 0;
-    text-align: center;
     align-items: center;
-    justify-content: center;
-    display: inline-block;
-    margin: 0 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    font-size: 30px;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    background-color: #EFE7CE;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 50px;
+
 }
-li{
-    font-weight: bold;
-    border: solid #000000 1px;
-    border: #000000 solid 1px;
+
+nav ul li a{
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+}
+input{
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px;
 }
