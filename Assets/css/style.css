@@ -1,4 +1,4 @@
-header{
+header {
     height: 400px;
     background-image: url(../image/header.jpg);
     background-size: cover;
@@ -11,7 +11,8 @@ header{
     /* Dimension du titre */
     font-size: 20px;
 }
-ul{
+
+ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -23,13 +24,71 @@ ul{
 
 }
 
-nav ul li a{
+nav ul li a {
     color: #000000;
     font-size: 20px;
     text-decoration: none;
 }
-input{
+
+input {
     border-radius: 10px;
     font-size: 18px;
     padding: 10px;
+}
+
+#home {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #C5E5F2;
+    margin: 10px 500px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#lineContainer {
+    display: flex;
+}
+
+img {
+    height: 400px;
+    width: 400px;
+}
+
+.description {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #C5E5F2;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-items: center;
+    text-align: center;
+}
+
+#iconBurger {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    #iconBurger {
+        display: block;
+    }
+
+    nav ul li a {
+        display: none;
+    }
+    #home {
+        margin: 10px;
+    }
+    #lineContainer{
+        flex-direction: column;
+    }
+    .block{
+        width: 100%;
+    }
 }
